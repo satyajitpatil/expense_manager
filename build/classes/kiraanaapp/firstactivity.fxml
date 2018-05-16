@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="f_activity" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="968.0" stylesheets="@mainfxml.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiraanaapp.firstactivityController">
+   <children>
+      <TableView fx:id="new_table" layoutX="235.0" layoutY="86.0" prefHeight="427.0" prefWidth="725.0">
+         <columns>
+            <TableColumn fx:id="col_productname" minWidth="0.0" prefWidth="292.0" text="Product" />
+            <TableColumn fx:id="col_gap1" minWidth="6.0" prefWidth="9.0" resizable="false" />
+            <TableColumn fx:id="col_amount" prefWidth="95.0" text="Amount" />
+            <TableColumn fx:id="col_gap2" minWidth="6.0" prefWidth="9.0" />
+            <TableColumn fx:id="col_category" prefWidth="310.0" text="Category" />
+         </columns>
+      </TableView>
+      <Label layoutX="235.0" layoutY="53.0" prefHeight="17.0" prefWidth="230.0" text="Recently Entered Products in the Database" />
+      <Pane fx:id="fa_upper_pane" prefHeight="612.0" prefWidth="214.0">
+         <children>
+            <TextField fx:id="productname_tf" layoutX="23.0" layoutY="50.0" stylesheets="@mainfxml.css" />
+            <TextField fx:id="productamount_tf" layoutX="23.0" layoutY="115.0" stylesheets="@mainfxml.css" />
+            <Label layoutX="22.0" layoutY="24.0" text="Product Name:" textFill="WHITE" />
+            <Label layoutX="23.0" layoutY="93.0" text="Product Amount:" textFill="WHITE" />
+            <Button fx:id="addrecord_button" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="23.0" layoutY="456.0" mnemonicParsing="false" onAction="#addrecord_fun" prefHeight="61.0" prefWidth="149.0" stylesheets="@mainfxml.css" text="Add record" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Plus_48px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator layoutX="22.0" layoutY="73.0" prefHeight="4.0" prefWidth="149.0" />
+            <Separator layoutX="22.0" layoutY="138.0" prefHeight="4.0" prefWidth="149.0" />
+            <Label layoutX="23.0" layoutY="234.0" prefHeight="17.0" prefWidth="90.0" text="Category" textFill="WHITE" />
+            <ComboBox fx:id="category_cb" layoutX="23.0" layoutY="268.0" prefWidth="150.0" promptText="Select Category" />
+            <Label layoutX="22.0" layoutY="160.0" prefHeight="17.0" prefWidth="90.0" text="Who spent it" textFill="WHITE" />
+            <ComboBox fx:id="whospentit_cb" layoutX="22.0" layoutY="194.0" prefWidth="150.0" promptText="Who spent it" />
+         </children>
+      </Pane>
+      <Pane layoutX="707.0" layoutY="528.0" prefHeight="70.0" prefWidth="247.0">
+         <children>
+            <Label alignment="CENTER" layoutX="68.0" layoutY="35.0" prefHeight="17.0" prefWidth="79.0" text="Total Amount" textAlignment="CENTER" />
+            <ImageView fitHeight="59.0" fitWidth="49.0" layoutX="11.0" layoutY="9.0">
+               <image>
+                  <Image url="@../images/icons8_Paper_Money_48px_7.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="Total_amount_label" alignment="TOP_LEFT" layoutX="154.0" layoutY="35.0" prefHeight="17.0" prefWidth="79.0" text="RS: 0" textAlignment="CENTER" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

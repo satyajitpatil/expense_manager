@@ -1,0 +1,110 @@
+.mainFxmlClass {
+
+}
+/*Navigation buttons*/
+#but_1:hover,#but_2:hover,#but_3:hover
+{
+    -fx-background-color: grey;
+    -fx-background-radius: 0;
+}
+
+/*Add_record button*/
+#addrecord_button
+{
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+#addrecord_button:hover
+{
+    -fx-background-color: grey;
+}
+
+#holder
+{
+    -fx-background-color: white;
+}
+#nav_vbox
+{
+    -fx-background-color: black;
+}
+#but_1,#but_2,#but_3,#but_4
+{
+    -fx-background-color: black;
+    -fx-text-fill: white
+}
+
+#productname_tf,#productamount_tf,#Quantity_tf
+{
+     -fx-background-radius: 0;
+     -fx-background-color: #424242;
+     -fx-text-fill: white;
+}
+
+
+#fa_upper_pane,#sa_upperpane
+{
+    -fx-background-color: #424242;
+}
+#s_activity{
+    -fx-background-color: white;
+}
+
+
+/* table styling*/
+#new_table{
+    -fx-base: white;
+    -fx-control-inner-background:white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color:transparent;
+    -fx-padding: 5;
+}
+#table2{
+    -fx-base:white;
+    -fx-control-inner-background:white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+#col_gap1,#col_gap2{   
+    -fx-background-color: white;
+}
+#sacol_gap1,#sacol_gap2,#sacol_gap3,#sacol_gap4{
+    -fx-background-color: white;
+}
+#col_productname,#col_amount,#col_category
+{
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-border-style: solid;
+}
+#sacol_productname,#sacol_amount,#sacol_category,#sacol_date,
+#sacol_whospentit{
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-border-style: solid;
+    
+    
+}
+
+
+
+
+
+
+#category_cb,#fromdate_dp,#lastdate_dp
+{
+    -fx-background-radius: 0;
+}
+#whospentit_cb,#category_cb
+{
+    -fx-background-radius: 0;
+    -fx-background-color: grey;  
+}
+

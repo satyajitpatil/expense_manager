@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="s_activity" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="968.0" stylesheets="@mainfxml.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kiraanaapp.SecondactivityController">
+   <children>
+      <Pane fx:id="sa_upperpane" layoutY="-1.0" prefHeight="264.0" prefWidth="969.0">
+         <children>
+            <Label layoutX="23.0" layoutY="78.0" text="From Date:" textFill="WHITE" />
+            <DatePicker fx:id="fromdate_dp" layoutX="108.0" layoutY="74.0" onAction="#show_rec" />
+            <DatePicker fx:id="lastdate_dp" layoutX="108.0" layoutY="114.0" onAction="#show_rec" />
+            <Label layoutX="23.0" layoutY="118.0" text="Last Date:" textFill="WHITE" />
+            <ComboBox fx:id="sacategory_cb" layoutX="108.0" layoutY="34.0" onAction="#show_rec" prefHeight="25.0" prefWidth="174.0" promptText="All categories" />
+            <AreaChart fx:id="area_chart" layoutX="349.0" layoutY="3.0" prefHeight="253.0" prefWidth="608.0" title="Expense" titleSide="LEFT">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </Pane>
+      <TableView fx:id="table2" layoutX="7.0" layoutY="268.0" prefHeight="301.0" prefWidth="954.0">
+        <columns>
+          <TableColumn fx:id="sacol_productname" prefWidth="291.0" text="Product Name" />
+          <TableColumn fx:id="sacol_gap1" prefWidth="10.0" />
+            <TableColumn fx:id="sacol_amount" prefWidth="78.0" text="Amount" />
+            <TableColumn fx:id="sacol_gap2" minWidth="7.0" prefWidth="7.0" />
+            <TableColumn fx:id="sacol_category" prefWidth="143.0" text="Category" />
+            <TableColumn fx:id="sacol_gap3" minWidth="5.0" prefWidth="8.0" />
+            <TableColumn fx:id="sacol_date" prefWidth="142.0" text="Date" />
+            <TableColumn fx:id="sacol_gap4" minWidth="4.0" prefWidth="6.0" />
+            <TableColumn fx:id="sacol_whospentit" prefWidth="258.0" text="Who spent it" />
+        </columns>
+      </TableView>
+      <Label fx:id="satotalamount_label" layoutX="684.0" layoutY="573.0" prefHeight="32.0" prefWidth="276.0" text="Total Amount:  RS ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
