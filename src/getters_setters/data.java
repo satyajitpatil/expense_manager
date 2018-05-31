@@ -12,10 +12,12 @@ package getters_setters;
 public class data {
     public String product;
     public int amount;
+    public String category;
 
-    public data(String product, int amount) {
+    public data(String product, int amount, String category) {
         this.product = product;
         this.amount = amount;
+        this.category=category;
     }
 
     public String getProduct() {
@@ -33,5 +35,11 @@ public class data {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+    public String getCategory(){
+        return category;
+    }
     
+    public void setCategory(String category){
+        this.category = category;
+    } 
 }

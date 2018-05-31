@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="KiraanaApp.jar" size="26790" download="eager" />
+    <jar href="KiraanaApp.jar" size="27106" download="eager" />
     <jar href="lib\jfoenix-8.0.1.jar" size="2405715" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.46-bin.jar" size="1004840" download="eager" />
   </resources>

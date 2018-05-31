@@ -28,6 +28,7 @@
                 <NumberAxis side="LEFT" />
               </yAxis>
             </AreaChart>
+            <Label fx:id="label_for_cb_category2" layoutX="117.0" layoutY="35.0" prefHeight="25.0" prefWidth="115.0" text="All categories" textFill="WHITE" />
          </children>
       </Pane>
       <TableView fx:id="table2" layoutX="7.0" layoutY="268.0" prefHeight="301.0" prefWidth="954.0">

@@ -53,11 +53,11 @@ public class firstactivityController implements Initializable  {
     @FXML
     private Button addrecord_button;
     @FXML
-    private ComboBox whospentit_cb,category_cb,sacategory_cb;
+    private ComboBox category_cb;
     @FXML
     private TextField productname_tf,productamount_tf;
     @FXML
-    private Label Total_amount_label;
+    private Label Total_amount_label,label_for_cb_category;
     @FXML
     private TableView<data> new_table;
     @FXML
@@ -66,6 +66,10 @@ public class firstactivityController implements Initializable  {
     private TableColumn<?, ?> col_gap;
     @FXML
     private TableColumn<?, ?> col_amount;  
+    @FXML
+    private TableColumn<?, ?> col_gap2;
+    @FXML
+    private TableColumn<?, ?> col_category;
     
     
     //observable lists
@@ -110,6 +114,10 @@ public class firstactivityController implements Initializable  {
         Total_amount_label.setText("RS:"+Integer.toString(total_amount));
         show_record();
     }
+    @FXML
+    private void setlabel_of_category_combobox(ActionEvent event){
+        label_for_cb_category.setText((String) category_cb.getValue());
+    }
     
     private void show_record()
     {
@@ -122,7 +130,8 @@ public class firstactivityController implements Initializable  {
                 dataclass_object.add(new data
                 (
                   rs.getString("product"),
-                  rs.getInt("amount")      
+                  rs.getInt("amount"),
+                  rs.getString("category")
                 ));
                 new_table.setItems(dataclass_object);
             }
@@ -144,9 +153,7 @@ public class firstactivityController implements Initializable  {
         // properties
         col_productname.setCellValueFactory(new PropertyValueFactory<>("product"));
         col_amount.setCellValueFactory(new PropertyValueFactory<>("amount"));
-        
-        whospentit_cb.setItems(whospentit_cb_list);
-        whospentit_cb.setValue("common");
+        col_category.setCellValueFactory(new PropertyValueFactory<>("category"));
         category_cb.setItems(category_cb_list);
         
         

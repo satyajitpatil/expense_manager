@@ -1,6 +1,42 @@
 .mainFxmlClass {
 
 }
+.date-picker > .text-field {
+    -fx-background-color: #424242;
+    
+}
+.combo-box-base:focused{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px;
+    -fx-background-radius: 0;
+}
+
+.combo-box{
+    -fx-border-width: 0px;
+    -fx-border-color: white;
+    -fx-background-color: #424242;
+    -fx-text-fill: white;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+}
+.combo-box .arrow{
+    -fx-background-color: white;
+}
+.combo-box .list-view{
+    -fx-text-fill: white;
+    -fx-border-color: #424242;
+    -fx-background-color: #424242;
+}
+.combo-box .list-view .list-cell{
+    -fx-text-fill: white;
+    -fx-border-color: #424242;
+    -fx-background-color: #424242;
+}
+.combo-box .list-view .list-cell:hover{
+    -fx-text-fill: white;
+    -fx-border-color: grey;
+    -fx-background-color: grey;
+}
 /*Navigation buttons*/
 #but_1:hover,#but_2:hover,#but_3:hover
 {
@@ -98,13 +134,7 @@
 
 
 
-#category_cb,#fromdate_dp,#lastdate_dp
+#fromdate_dp,#lastdate_dp
 {
     -fx-background-radius: 0;
 }
-#whospentit_cb,#category_cb
-{
-    -fx-background-radius: 0;
-    -fx-background-color: grey;  
-}
-

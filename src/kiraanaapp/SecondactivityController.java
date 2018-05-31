@@ -51,7 +51,7 @@ public class SecondactivityController implements Initializable {
     @FXML
     private Pane sa_upperpane;
     @FXML
-    private Label satotalamount_label;
+    private Label satotalamount_label,label_for_cb_category2;
     @FXML
     private DatePicker fromdate_dp;
     @FXML
@@ -214,7 +214,10 @@ public class SecondactivityController implements Initializable {
         //append_it_last_on_chart_query = " where "+append_it_last_on_chart_query;
         //string_manipulation_for_chart(append_it_last_on_chart_query,and_append_it_last_on_chart_query);
     }
-    
+    @FXML
+    private void setlabel_of_category_combobox2(){
+        label_for_cb_category2.setText((String) sacategory_cb.getValue());
+    }
     
     
     
